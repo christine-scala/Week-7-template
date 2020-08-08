@@ -8,9 +8,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 
 var connection = mysql.createConnection({
-  host     : 'l',
+  host     : 'localhost',
   user     : 'root',
-  database : '',
+  database : 'users',
 });
 
 app.get("/", function(req, res){
